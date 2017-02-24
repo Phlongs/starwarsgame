@@ -1,0 +1,69 @@
+body {
+	background-image: url(../images/starwarsbattle2.jpg);
+	background-size: 1650px 900px;
+	background-repeat: no-repeat;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+h1 {
+	font-family: 'Francois One', sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	text-shadow: 0 0 10px black, 0 0 15px black;
+}
+
+h2 {
+	font-family: 'Francois One', sans-serif;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 10px black, 0 0 15px black;
+}
+
+.houses {
+	width: 100px;
+}
+
+.character {
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	font-family: serif;
+}
+
+.hero {
+	background-color: white;
+}
+
+.fighting {
+	background-color: black;
+}
+
+#attack {
+	margin-top: 50px;
+	font-family: 'Francois One', sans-serif;
+	font-size: 24px;
+	background-color: black;
+	color: white;
+	border-style: solid;
+	border-color: black;
+}
+
+#restart {
+	font-family: 'Francois One', sans-serif;
+	font-size: 22px;
+	background-color: white;
+	color: black;
+	border-style: solid;
+	border-color: black;
+}
+
+#whathappens {
+	background-color: white;
+	font-weight: bold;
+	font-family: 'Francois One', sans-serif;
+	border-style: solid;
+	border-color: black;
+}
+
