@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	var myChar, opponentChar, choices, enemyArray, haveCharacter, haveAttacker, numEnemies, rounds;	//Set Global Variables
-	var wins = 0;
-	var loses = 0;
+	
 
 	function varSet() {		//Sets all of the variable values
 		myChar;
@@ -67,9 +66,9 @@ $(document).ready(function() {
 	}
 
 	function whatHappens() {
-		var description = "You attack " + enemyArray[opponentChar].name + " for " + enemyArray[myChar].attackPower + " damage!<br>" +
-			enemyArray[opponentChar].name + " counter attacks for " + enemyArray[opponentChar].attackPower + " damage!<br>" +
-			"Your attack power has increased by " + rounds + "!";
+		var description = "Results from your attack: <br>" + "Your attack damaged " + enemyArray[opponentChar].name + " by " + enemyArray[myChar].attackPower + " health points!<br>"
+			+ enemyArray[opponentChar].name + "'s counter attack damaged you by " + enemyArray[opponentChar].attackPower + " health points!<br>" +
+			"Good news! Your attack power has increased by " + rounds + "!";
 		$('#whathappens').html(description);
 	}
 
@@ -82,7 +81,7 @@ $(document).ready(function() {
 
 				haveCharacter = true;
 				$('#whathappens').html("");
-				$("#todo").html("Choose your opponent!");
+				$("#todo").html("Choose your enemy to fight!");
 			}
 			//You have a character and you're picking your opponent
 			else if(!haveAttacker && haveCharacter && myChar !== $(this).attr('id')) {	
@@ -92,7 +91,7 @@ $(document).ready(function() {
 
 				haveAttacker = true;
 				$('#whathappens').html("");
-				$("#todo").html("Keep clicking attack to duel!");
+				$("#todo").html("Keep clicking attack to destroy!");
 			}
 		});
 	}
@@ -115,7 +114,7 @@ $(document).ready(function() {
 				if(numEnemies > 0) {
 					$(".fighting").remove();
 					$('#whathappens').html("");
-					$("#todo").html("Who will you duel next?");
+					$("#todo").html("Who will you fight next?");
 					haveAttacker = false;
 				}
 				else {
@@ -135,7 +134,7 @@ $(document).ready(function() {
 				printCharacters();
 			}
 
-			enemyArray[myChar].attackPower = enemyArray[myChar].attackPower + rounds;	//Get Stronger
+			enemyArray[myChar].attackPower += rounds;	//Get Stronger
 		}
 	});
 
