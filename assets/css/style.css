@@ -67,9 +67,9 @@ h2 {
 	
 }
 
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
+@media only screen and (min-width: 414px) and (max-width: 736px) { 
+	body {
+	background-image: url(../images/starwarsbattle2.jpg);
+	background-size: 1650px 1200px;
+	}
 }
