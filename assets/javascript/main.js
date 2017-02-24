@@ -41,8 +41,8 @@ $(document).ready(function() {
 
 		for(var i = 0; i < enemyArray.length; i++) {
 			choices += "<div id=" + enemyArray[i].id + " class='btn character' value=" + enemyArray[i].id +
-			"><img class='houses' src=" + enemyArray[i].pic + " alt=" + enemyArray[i].name + "><br> HP: " + enemyArray[i].hitPoints +
-			"<br> AP: " + enemyArray[i].attackPower + " </div>";
+			"><img class='houses' src=" + enemyArray[i].pic + " alt=" + enemyArray[i].name + "><br> Health: " + enemyArray[i].hitPoints +
+			"<br> Attack: " + enemyArray[i].attackPower + " </div>";
 		}
 
 		$("#picking").html(choices);
@@ -56,10 +56,10 @@ $(document).ready(function() {
 	}
 
 	function printCharacters() {
-		var hero = "<div id=" + enemyArray[myChar].id + " class='btn character text-center hero' value=" + enemyArray[myChar].id +
+		var hero = "<div id=" + enemyArray[myChar].id + " class='btn character hero' value=" + enemyArray[myChar].id +
 			"><img class='houses' src=" + enemyArray[myChar].pic + " alt=" + enemyArray[myChar].name + "><br> Health: " + enemyArray[myChar].hitPoints +
 			"<br> Attack: " + enemyArray[myChar].attackPower + " </div>";
-		var badguy = "<div id=" + enemyArray[opponentChar].id + " class='btn character text-center fighting' value=" + enemyArray[opponentChar].id +
+		var badguy = "<div id=" + enemyArray[opponentChar].id + " class='btn character fighting' value=" + enemyArray[opponentChar].id +
 			"><img class='houses' src=" + enemyArray[opponentChar].pic + " alt=" + enemyArray[opponentChar].name + "><br> Health: " + enemyArray[opponentChar].hitPoints +
 			"<br> Attack: " + enemyArray[opponentChar].attackPower + " </div>";
 		$('#myguy').html(hero);

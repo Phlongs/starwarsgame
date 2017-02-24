@@ -1,6 +1,6 @@
 body {
 	background-image: url(../images/starwarsbattle2.jpg);
-	background-size: 1650px 900px;
+	background-size: 1650px 1000px;
 	background-repeat: no-repeat;
 
 }
@@ -71,13 +71,5 @@ h2 {
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-	.hero {
-		background-color: white;
 
-	}
-
-	.fighting {
-		background-color: black;
-		color: white;
-	}
 }
