@@ -57,11 +57,11 @@ $(document).ready(function() {
 
 	function printCharacters() {
 		var hero = "<div id=" + enemyArray[myChar].id + " class='btn character text-center hero' value=" + enemyArray[myChar].id +
-			"><img class='houses' src=" + enemyArray[myChar].pic + " alt=" + enemyArray[myChar].name + "><br> HP: " + enemyArray[myChar].hitPoints +
-			"<br> AP: " + enemyArray[myChar].attackPower + " </div>";
+			"><img class='houses' src=" + enemyArray[myChar].pic + " alt=" + enemyArray[myChar].name + "><br> Health: " + enemyArray[myChar].hitPoints +
+			"<br> Attack: " + enemyArray[myChar].attackPower + " </div>";
 		var badguy = "<div id=" + enemyArray[opponentChar].id + " class='btn character text-center fighting' value=" + enemyArray[opponentChar].id +
-			"><img class='houses' src=" + enemyArray[opponentChar].pic + " alt=" + enemyArray[opponentChar].name + "><br> HP: " + enemyArray[opponentChar].hitPoints +
-			"<br> AP: " + enemyArray[opponentChar].attackPower + " </div>";
+			"><img class='houses' src=" + enemyArray[opponentChar].pic + " alt=" + enemyArray[opponentChar].name + "><br> Health: " + enemyArray[opponentChar].hitPoints +
+			"<br> Attack: " + enemyArray[opponentChar].attackPower + " </div>";
 		$('#myguy').html(hero);
 		$('#enemy').html(badguy);
 	}

@@ -38,6 +38,7 @@ h2 {
 
 .fighting {
 	background-color: black;
+	color: white;
 }
 
 #attack {
@@ -63,7 +64,20 @@ h2 {
 	background-color: white;
 	font-weight: bold;
 	font-family: 'Francois One', sans-serif;
-	border-style: solid;
-	border-color: black;
+	
 }
 
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	.hero {
+		background-color: white;
+
+	}
+
+	.fighting {
+		background-color: black;
+		color: white;
+	}
+}
