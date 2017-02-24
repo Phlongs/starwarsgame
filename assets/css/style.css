@@ -45,6 +45,7 @@ h2 {
 	margin-top: 50px;
 	font-family: 'Francois One', sans-serif;
 	font-size: 24px;
+	font-weight: bold;
 	background-color: black;
 	color: white;
 	border-style: solid;
@@ -54,6 +55,7 @@ h2 {
 #restart {
 	font-family: 'Francois One', sans-serif;
 	font-size: 22px;
+	font-weight: bold;
 	background-color: white;
 	color: black;
 	border-style: solid;
@@ -71,5 +73,6 @@ h2 {
 	body {
 	background-image: url(../images/starwarsbattle2.jpg);
 	background-size: 1650px 1200px;
+	background-repeat: repeat;
 	}
 }
