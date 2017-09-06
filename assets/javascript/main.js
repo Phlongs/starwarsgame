@@ -12,7 +12,7 @@ $(document).ready(function() {
 			name: "Luke",
 			pic: 'assets/images/luke.jpg',
 			hitPoints: 150,
-			attackPower: 5
+			attackPower: 6
 		}, {
 			id: 1,
 			name: "HansSolo",
